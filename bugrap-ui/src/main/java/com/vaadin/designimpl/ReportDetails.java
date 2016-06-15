@@ -11,6 +11,7 @@ import com.vaadin.ui.*;
 import org.vaadin.bugrap.domain.BugrapRepository;
 import org.vaadin.bugrap.domain.entities.*;
 
+import java.io.OutputStream;
 import java.util.*;
 
 import static com.vaadin.designimpl.ReportsOverviewSelection.getSelectionCache;
@@ -72,15 +73,18 @@ public class ReportDetails extends ReportDetailsDesign {
       @Override
       public void buttonClick(Button.ClickEvent event)
       {
-
+        new Upload("New attachment...", new Upload.Receiver() {
+          @Override
+          public OutputStream receiveUpload(String filename, String mimeType)
+          {
+            return null;
+          }
+        });
       }
     });
-    cancelButton.addClickListener(new Button.ClickListener() {
-      @Override
-      public void buttonClick(Button.ClickEvent event)
-      {
-        attachmentsBar.removeAllComponents();
-      }
+    cancelButton.addClickListener((Button.ClickListener) event -> {
+      attachmentsBar.removeAllComponents();
+      commentTextArea.clear();
     });
   }
 
