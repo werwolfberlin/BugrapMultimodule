@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="distributionBar-demo:war">
+    <output-path>$PROJECT_DIR$/distributionbar/distributionBar-demo/target</output-path>
+    <root id="archive" name="distributionBar-demo-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="distributionBar-demo:war exploded" />
+    </root>
+  </artifact>
+</component>

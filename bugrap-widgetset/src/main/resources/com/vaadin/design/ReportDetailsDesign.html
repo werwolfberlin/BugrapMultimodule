@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8" name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;valo&quot;}">
+  <meta charset="UTF-8" name="package-mapping" content="com_vaadin:com.vaadin">
+ </head> 
+ <body> 
+  <vaadin-vertical-layout size-full> 
+   <vaadin-vertical-layout spacing _id="controlsContainer"> 
+    <vaadin-horizontal-layout :middle> 
+     <vaadin-label style-name="huge" size-auto plain-text>
+       &nbsp;&nbsp; 
+     </vaadin-label> 
+     <vaadin-button icon="fonticon://FontAwesome/f08e" style-name="borderless" plain-text _id="openInWindowButton" :middle></vaadin-button> 
+     <vaadin-label _id="artefactSummary" :middle :expand></vaadin-label> 
+     <vaadin-label plain-text _id="artefactSummaryExtension" :middle :expand>
+       - Select a single report to view contents 
+     </vaadin-label> 
+    </vaadin-horizontal-layout> 
+    <vaadin-horizontal-layout spacing> 
+     <vaadin-label style-name="huge" size-auto plain-text>
+       &nbsp;&nbsp; 
+     </vaadin-label> 
+     <vaadin-native-select caption="PRIORITY" item-caption-mode="id" height="35px" _id="priorityComboBox" :bottom></vaadin-native-select> 
+     <vaadin-native-select caption="TYPE" item-caption-mode="id" height="35px" _id="typeComboBox" :bottom></vaadin-native-select> 
+     <vaadin-native-select caption="STATUS" item-caption-mode="id" height="35px" _id="statusComboBox" :bottom></vaadin-native-select> 
+     <vaadin-native-select caption="ASSIGNED TO" item-caption-mode="id" height="35px" _id="assignedToComboBox" :bottom></vaadin-native-select> 
+     <vaadin-native-select caption="VERSION" item-caption-mode="id" height="35px" _id="versionComboBox" :bottom></vaadin-native-select> 
+     <vaadin-horizontal-layout spacing :bottom> 
+      <vaadin-button plain-text _id="updateButton" :middle>
+        Update 
+      </vaadin-button> 
+      <vaadin-button style-name="tiny" plain-text _id="revertButton" :middle>
+        Revert 
+      </vaadin-button> 
+     </vaadin-horizontal-layout> 
+    </vaadin-horizontal-layout> 
+   </vaadin-vertical-layout> 
+   <vaadin-vertical-split-panel _id="detailsSplitPanel" :expand> 
+    <vaadin-horizontal-layout size-full> 
+     <vaadin-text-area size-full _id="detailsTextArea"></vaadin-text-area> 
+    </vaadin-horizontal-layout> 
+    <vaadin-vertical-layout size-full margin _id="commentSection"> 
+     <vaadin-text-area size-full _id="commentTextArea" :middle :center :expand></vaadin-text-area> 
+     <vaadin-horizontal-layout _id="attachmentsBar"></vaadin-horizontal-layout> 
+     <vaadin-horizontal-layout spacing> 
+      <vaadin-button plain-text _id="doneButton">
+        Done 
+      </vaadin-button> 
+      <vaadin-button plain-text _id="attachmentButton">
+        Attachment... 
+      </vaadin-button> 
+      <vaadin-button plain-text _id="cancelButton">
+        Cancel 
+      </vaadin-button> 
+     </vaadin-horizontal-layout> 
+    </vaadin-vertical-layout> 
+   </vaadin-vertical-split-panel> 
+  </vaadin-vertical-layout>  
+ </body>
+</html>

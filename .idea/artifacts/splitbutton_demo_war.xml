@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="splitbutton-demo:war">
+    <output-path>$PROJECT_DIR$/splitbutton/splitbutton-demo/target</output-path>
+    <root id="archive" name="splitbutton-demo-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="splitbutton-demo:war exploded" />
+    </root>
+  </artifact>
+</component>

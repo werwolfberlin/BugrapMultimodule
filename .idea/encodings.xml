@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bugrap-production" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bugrap-ui" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bugrap-widgetset" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/distributionbar" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/distributionbar/distributionBar-addon" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/distributionbar/distributionBar-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/splitbutton" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/splitbutton" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/splitbutton/splitbutton-addon" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/splitbutton/splitbutton-demo" charset="UTF-8" />
+  </component>
+</project>

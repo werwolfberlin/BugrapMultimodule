@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8" name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:true,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GRID_TYPE&quot;:&quot;RegularGrid,19&quot;,&quot;THEME&quot;:&quot;valo&quot;}">
+  <meta charset="UTF-8" name="package-mapping" content="com_vaadin_designimpl:com.vaadin.designimpl">
+  <meta charset="UTF-8" name="package-mapping" content="com_vaadin_design:com.vaadin.design">
+ </head> 
+ <body> 
+  <vaadin-vertical-layout size-full> 
+   <vaadin-vertical-split-panel locked split-position="100%" _id="splitPanel" :middle :center :expand> 
+    <vaadin-vertical-layout size-full> 
+     <vaadin-horizontal-layout width-full> 
+      <vaadin-combo-box invalid-allowed="false" style-name="borderless" item-caption-mode="id" immediate="false" width="500px" height="37px" _id="projectsComboBox"></vaadin-combo-box> 
+      <vaadin-label size-auto plain-text :expand></vaadin-label> 
+      <vaadin-grid-layout spacing> 
+       <row> 
+        <column> 
+         <vaadin-button icon="fonticon://FontAwesome/f007" style-name="borderless" plain-text _id="userButton" :middle></vaadin-button> 
+        </column> 
+        <column> 
+         <vaadin-label style-name="huge" size-auto plain-text :middle>
+           | 
+         </vaadin-label> 
+        </column> 
+        <column> 
+         <vaadin-button icon="fonticon://FontAwesome/f084" style-name="borderless" plain-text _id="logoutButton" :middle>
+           Logout 
+         </vaadin-button> 
+        </column> 
+        <column> 
+         <vaadin-label style-name="huge" size-auto plain-text :middle>
+           &nbsp; 
+         </vaadin-label> 
+        </column> 
+       </row> 
+       <row></row> 
+      </vaadin-grid-layout> 
+     </vaadin-horizontal-layout> 
+     <vaadin-horizontal-layout width-full> 
+      <vaadin-grid-layout spacing> 
+       <row> 
+        <column> 
+         <vaadin-label style-name="huge" size-auto plain-text :middle>
+           &nbsp;&nbsp; 
+         </vaadin-label> 
+        </column> 
+        <column> 
+         <vaadin-button icon="fonticon://FontAwesome/f188" style-name="borderless" plain-text _id="reportBugButton" :middle>
+           Report a bug 
+         </vaadin-button> 
+        </column> 
+        <column> 
+         <vaadin-label style-name="huge" size-auto plain-text :middle>
+           | 
+         </vaadin-label> 
+        </column> 
+        <column> 
+         <vaadin-button icon="fonticon://FontAwesome/f0eb" style-name="borderless" plain-text _id="requestFeatureButton" :middle>
+           Request a feature 
+         </vaadin-button> 
+        </column> 
+        <column> 
+         <vaadin-label style-name="huge" size-auto plain-text :middle>
+           | 
+         </vaadin-label> 
+        </column> 
+        <column> 
+         <vaadin-button icon="fonticon://FontAwesome/f013" style-name="borderless" plain-text _id="manageProjectButton" :middle>
+           Manage project 
+         </vaadin-button> 
+        </column> 
+       </row> 
+      </vaadin-grid-layout> 
+      <vaadin-label :expand></vaadin-label> 
+      <vaadin-text-field icon="fonticon://FontAwesome/f002" input-prompt="Search reports ..." style-name="inline-icon" width="500px" _id="searchTextField"></vaadin-text-field> 
+      <vaadin-label style-name="huge" size-auto plain-text :middle>
+        &nbsp; 
+      </vaadin-label> 
+     </vaadin-horizontal-layout> 
+     <vaadin-label :middle :center> 
+      <hr> 
+     </vaadin-label> 
+     <vaadin-horizontal-layout width-full height="50px"> 
+      <vaadin-label size-auto :middle>
+        &nbsp;&nbsp;Reports for&nbsp; 
+      </vaadin-label> 
+      <vaadin-native-select style-name="borderless tiny" item-caption-mode="id" _id="versionsComboBox" :middle></vaadin-native-select> 
+      <vaadin-progress-bar width-full :middle :center :expand></vaadin-progress-bar> 
+      <vaadin-label style-name="huge" size-auto plain-text :middle>
+        &nbsp; 
+      </vaadin-label> 
+     </vaadin-horizontal-layout> 
+     <vaadin-horizontal-layout height="50px" _id="optionsLayout"> 
+      <vaadin-label size-auto :middle :expand="0.1">
+        &nbsp;&nbsp;Assignees&nbsp;&nbsp; 
+      </vaadin-label> 
+      <vaadin-button style-name="tiny" plain-text _id="buttonAssigneesOnlyMe" :middle>
+        Only me 
+      </vaadin-button> 
+      <vaadin-button style-name="tiny" plain-text _id="buttonAssigneesEveryone" :middle>
+        Everyone 
+      </vaadin-button> 
+      <vaadin-label size-auto :middle>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Status&nbsp;&nbsp; 
+      </vaadin-label> 
+      <vaadin-button style-name="tiny" plain-text _id="buttonStatusOpen" :middle>
+        Open 
+      </vaadin-button> 
+      <vaadin-button style-name="tiny" plain-text _id="buttonStatusAll" :middle>
+        All kinds 
+      </vaadin-button> 
+      <vaadin-button style-name="tiny" plain-text _id="buttonStatusCustom" :middle>
+        Custom ▼ 
+      </vaadin-button> 
+     </vaadin-horizontal-layout> 
+     <vaadin-table size-full _id="artifactTable" :center :expand></vaadin-table> 
+    </vaadin-vertical-layout> 
+   </vaadin-vertical-split-panel> 
+  </vaadin-vertical-layout>  
+ </body>
+</html>

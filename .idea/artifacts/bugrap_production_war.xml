@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="bugrap-production:war">
+    <output-path>$PROJECT_DIR$/bugrap-production/target</output-path>
+    <root id="archive" name="bugrap-production-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="bugrap-production:war exploded" />
+    </root>
+  </artifact>
+</component>
