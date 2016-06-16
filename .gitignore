@@ -56,3 +56,7 @@ fabric.properties
 hs_err_pid*
 
 /.idea/
+/**/target/
+/**/.settings/
+.classpath
+.project
